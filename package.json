@@ -1,0 +1,13 @@
+{
+  "name": "Notification-Delivery-Service",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sam-build": "cd notification-delivery-queue-lambda && npm run build && cd .. && sam build -u --parallel",
+    "sam-deploy": "sam deploy",
+    "sam-build-deploy": "npm run sam-build && npm run sam-deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
